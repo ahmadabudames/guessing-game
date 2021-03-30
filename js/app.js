@@ -1,15 +1,23 @@
 'use strict';
 
-let ready=prompt('are you ready?');
+let username = prompt('what is your name?');
+while (!username){
+username = prompt('please write your name');
+}
+alert(`hello ${username} nice too meet you`);
+
+let ready=prompt('do i  ready?');
 
 switch(ready.toLowerCase()){
     case 'yes':
     // console.log('lets start');
    alert('lets start');
+   score++;
     break;
     case 'y':
     // console.log('lets start');
    alert('lets start');
+   score++;
     break;
     case 'no':
         // console.log('take your time to be ready');
@@ -20,16 +28,18 @@ switch(ready.toLowerCase()){
             alert('take your time to be ready');
 }
 
-let enthusiastic=prompt('are you enthusiastic?');
+let enthusiastic=prompt('do i enthusiastic?');
 
 switch(enthusiastic.toLowerCase()){
     case 'yes':
         // console.log('nice to hear that');
     alert('nice to hear that');
+    score++;
     break;
     case 'y':
         // console.log('nice to hear that');('nice to hear that');
         alert('nice to hear that');
+        score++;
     break;
     case 'no':
         //  console.log('oh you looked like you had difficult day');
@@ -41,16 +51,18 @@ switch(enthusiastic.toLowerCase()){
 }
 
 
-let feelgood=prompt('are you feel good?');
+let feelgood=prompt('do i  feel good?');
 
 switch(feelgood.toLowerCase()){
     case 'yes':
         // console.log('nice to hear that');
        alert('nice to hear that');
+       score++;
     break;
     case 'y':
     // console.log('nice to hear that');
     alert('nice to hear that');
+    score++;
     break;
     case 'no':
         // console.log('sorry for hear that');
@@ -63,16 +75,18 @@ switch(feelgood.toLowerCase()){
 }
 
 
-let experience=prompt('are you have any previous experience?');
+let experience=prompt('do i have any previous experience?');
 
 switch(experience.toLowerCase()){
     case 'yes':
     // console.log('we need you to be with us');
    alert('we need you to be with us');
+   score++;
     break;
     case 'y':
     // console.log('we need you to be with us');
     alert('we need you to be with us');
+    score++;
     break;
     case 'no':
        
@@ -85,28 +99,79 @@ switch(experience.toLowerCase()){
 }
 
 
-let withus=prompt('do you accept to be with us?');
+let withus=prompt('do i like blue color?');
 
 switch(withus.toLowerCase()){
     case 'yes':
-    // console.log('welcome to be with us');
-    alert('welcome to be with us');
+    // console.log('nice color');
+    alert('nice color');
+    score++;
     break;
     case 'y':
-    // console.log('welcome to be with us');
-    alert('welcome to be with us');
+    // console.log('nice color');
+    alert('nice color');
+    score++;
     break;
     case 'no':
-        // console.log('oh sorry, nice to meet you ');
-        alert('oh sorry, nice to meet you ');
+        // console.log('i dont like it');
+        alert('i dont like it ');
         break;
         case 'n':
-//             console.log('oh sorry, nice to meet you ');
-alert('oh sorry, nice to meet you ');
+//             console.log('i dont like it ');
+alert('i dont like it ');
 }
 
+let bMonth=prompt('which month i was born?');
 
+for(let q=0;q<4;q++){
+    if(bMonth===11){
+        alert('correct answer')
+        score++
+        break;  
+    }
 
+else if(bMonth>11){
+     bMonth=prompt('too high,try again');
+   
+}else if(bMonth<11){
+    bMonth=prompt('too low,try again');
+}
+else{
+    alert('the correct answer is 11')
+    break;
+}
+}
+
+let arrayofColor=['red','black','blue'];
+for(let q=0;q<6;q++){
+    let color=prompt('which color i like it?')
+// for(let i=0;i<arrayofColor.length;i++){
+    if(color=='red'){
+        alert('correct answer') 
+        break;
+    }
+    else if(color=='black'){
+        alert('correct answer') 
+        break;
+    }
+    else if(color=='blue'){
+    alert('correct answer') 
+    break;
+}
+else if(color!='blue'){
+    color=prompt('please try again');
+
+}
+else if(color!='red'){
+    color=prompt('please try again');
+}
+else if(color!='black'){
+    color=prompt('please try again');
+}
+else{
+    alert(`the correct answer is ${arrayofColor}`)
+}
+}
 
 
 
