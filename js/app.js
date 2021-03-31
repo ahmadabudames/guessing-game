@@ -134,29 +134,35 @@ switch (withus.toLowerCase()) {
     case 'n':
         //             console.log('i dont like it ');
         alert('i dont like it ');
+
 }
 }
 
-// let bMonth = prompt('which month i was born?');
+//Question 6
 
-// for (let q = 0; q < 4; q++) {
-//     if (bMonth === 11) {
-//         alert('correct answer')
-//         score++
-//         break;
-//     }
+function questionSix()
+{
+let bMonth = prompt('which month i was born?');
 
-//     else if (bMonth > 11) {
-//         bMonth = prompt('too high,try again');
+for (let q = 0; q < 4; q++) {
+    if (bMonth === 11) {
+        alert('correct answer')
+        score++
+        break;
+    }
 
-//     } else if (bMonth < 11) {
-//         bMonth = prompt('too low,try again');
-//     }
-//     else {
-//         alert('the correct answer is 11')
-//         break;
-//     }
-// }
+    else if (bMonth > 11) {
+        bMonth = prompt('too high,try again');
+
+    } else if (bMonth < 11) {
+        bMonth = prompt('too low,try again');
+    }
+    else {
+        alert('the correct answer is 11')
+        break;
+    }
+}
+}
 // let color = 0;
 // let arrayofColor = ['red', 'black', 'blue'];
 // let attempts = 6;
@@ -183,8 +189,9 @@ switch (withus.toLowerCase()) {
 
 //Calling 
 
-questionOne()
-questionTwo()
-questionThree()
-questionFour()
-questionFive()
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
