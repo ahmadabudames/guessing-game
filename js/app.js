@@ -1,5 +1,5 @@
 'use strict';
-
+let score=0;
 let username = prompt('what is your name?');
 while (!username){
 username = prompt('please write your name');
@@ -141,37 +141,31 @@ else{
     break;
 }
 }
-
+let color=0;
 let arrayofColor=['red','black','blue'];
-for(let q=0;q<6;q++){
-    let color=prompt('which color i like it?')
-// for(let i=0;i<arrayofColor.length;i++){
-    if(color=='red'){
-        alert('correct answer') 
-        break;
-    }
-    else if(color=='black'){
-        alert('correct answer') 
-        break;
-    }
-    else if(color=='blue'){
-    alert('correct answer') 
-    break;
-}
-else if(color!='blue'){
-    color=prompt('please try again');
+let attempts = 6;
 
+hasAttempts:while(attempts){
+    color=prompt('which color i like it?');
+    attempts=attempts-1;
+    for (let i=0; i<arrayofColor.length;i++){
+        
+        if(color === arrayofColor[i]){
+            alert('correct here the answer'+ arrayofColor);
+            break hasAttempts;
+        }
 }
-else if(color!='red'){
-    color=prompt('please try again');
+alert('sorry incorrect answer');
 }
-else if(color!='black'){
-    color=prompt('please try again');
+if(!attempts){
+    alert('sorry your chance its over , here are the answer'+arrayofColor);
 }
-else{
-    alert(`the correct answer is ${arrayofColor}`)
-}
-}
+    
+
+   
+         
+        
+  
 
 
 
