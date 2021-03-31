@@ -33,30 +33,30 @@ function questionOne() {
 }
 
 //Question 2
-// function questionTwo()
-// {
-// let enthusiastic = prompt('do i enthusiastic?');
+function questionTwo()
+{
+let enthusiastic = prompt('do i enthusiastic?');
 
-// switch (enthusiastic.toLowerCase()) {
-//     case 'yes':
-//         // console.log('nice to hear that');
-//         alert('nice to hear that');
-//         score++;
-//         break;
-//     case 'y':
-//         // console.log('nice to hear that');('nice to hear that');
-//         alert('nice to hear that');
-//         score++;
-//         break;
-//     case 'no':
-//         //  console.log('oh you looked like you had difficult day');
-//         alert('oh you looked like you had difficult day');
-//         break;
-//     case 'n':
-//         // console.log('oh you looked like you had difficult day');
-//         alert('oh you looked like you had difficult day');
-// }
-// }
+switch (enthusiastic.toLowerCase()) {
+    case 'yes':
+        // console.log('nice to hear that');
+        alert('nice to hear that');
+        score++;
+        break;
+    case 'y':
+        // console.log('nice to hear that');('nice to hear that');
+        alert('nice to hear that');
+        score++;
+        break;
+    case 'no':
+        //  console.log('oh you looked like you had difficult day');
+        alert('oh you looked like you had difficult day');
+        break;
+    case 'n':
+        // console.log('oh you looked like you had difficult day');
+        alert('oh you looked like you had difficult day');
+}
+}
 
 // let feelgood = prompt('do i  feel good?');
 
@@ -174,3 +174,5 @@ function questionOne() {
 
 
 
+questionOne()
+questionTwo()
