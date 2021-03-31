@@ -92,12 +92,12 @@ let experience = prompt('do i have any previous experience?');
 switch (experience.toLowerCase()) {
     case 'yes':
         // console.log('we need you to be with us');
-        alert('we need you to be with us');
+        alert('we need you');
         score++;
         break;
     case 'y':
         // console.log('we need you to be with us');
-        alert('we need you to be with us');
+        alert('we need you');
         score++;
         break;
     case 'no':
