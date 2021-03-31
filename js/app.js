@@ -58,53 +58,58 @@ switch (enthusiastic.toLowerCase()) {
 }
 }
 
-// let feelgood = prompt('do i  feel good?');
+//Question 3
+function questionThree(){
+let feelgood = prompt('do i  feel good?');
 
-// switch (feelgood.toLowerCase()) {
-//     case 'yes':
-//         // console.log('nice to hear that');
-//         alert('nice to hear that');
-//         score++;
-//         break;
-//     case 'y':
-//         // console.log('nice to hear that');
-//         alert('nice to hear that');
-//         score++;
-//         break;
-//     case 'no':
-//         // console.log('sorry for hear that');
-//         alert('sorry for hear that');
-//         break;
-//     case 'n':
+switch (feelgood.toLowerCase()) {
+    case 'yes':
+        // console.log('nice to hear that');
+        alert('nice to hear that');
+        score++;
+        break;
+    case 'y':
+        // console.log('nice to hear that');
+        alert('nice to hear that');
+        score++;
+        break;
+    case 'no':
+        // console.log('sorry for hear that');
+        alert('sorry for hear that');
+        break;
+    case 'n':
 
-//         // console.log('sorry for hear that');
-//         alert('sorry for hear that');
-// }
+        // console.log('sorry for hear that');
+        alert('sorry for hear that');
+}
+}
 
+// Question 4
+function questionFour(){
 
-// let experience = prompt('do i have any previous experience?');
+let experience = prompt('do i have any previous experience?');
 
-// switch (experience.toLowerCase()) {
-//     case 'yes':
-//         // console.log('we need you to be with us');
-//         alert('we need you to be with us');
-//         score++;
-//         break;
-//     case 'y':
-//         // console.log('we need you to be with us');
-//         alert('we need you to be with us');
-//         score++;
-//         break;
-//     case 'no':
+switch (experience.toLowerCase()) {
+    case 'yes':
+        // console.log('we need you to be with us');
+        alert('we need you to be with us');
+        score++;
+        break;
+    case 'y':
+        // console.log('we need you to be with us');
+        alert('we need you to be with us');
+        score++;
+        break;
+    case 'no':
 
-//         // console.log('better you have ');
-//         alert('better you have ');
-//         break;
-//     case 'n':
-//         // console.log('better you have');
-//         alert('better you have ');
-// }
-
+        // console.log('better you have ');
+        alert('better you have ');
+        break;
+    case 'n':
+        // console.log('better you have');
+        alert('better you have ');
+}
+}
 
 // let withus = prompt('do i like blue color?');
 
@@ -172,7 +177,9 @@ switch (enthusiastic.toLowerCase()) {
 
 
 
-
+//Calling 
 
 questionOne()
 questionTwo()
+questionThree()
+questionFour()
