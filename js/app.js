@@ -110,28 +110,32 @@ switch (experience.toLowerCase()) {
         alert('better you have ');
 }
 }
+//Question 5
 
-// let withus = prompt('do i like blue color?');
+function questionFive()
+{
+let withus = prompt('do i like blue color?');
 
-// switch (withus.toLowerCase()) {
-//     case 'yes':
-//         // console.log('nice color');
-//         alert('nice color');
-//         score++;
-//         break;
-//     case 'y':
-//         // console.log('nice color');
-//         alert('nice color');
-//         score++;
-//         break;
-//     case 'no':
-//         // console.log('i dont like it');
-//         alert('i dont like it ');
-//         break;
-//     case 'n':
-//         //             console.log('i dont like it ');
-//         alert('i dont like it ');
-// }
+switch (withus.toLowerCase()) {
+    case 'yes':
+        // console.log('nice color');
+        alert('nice color');
+        score++;
+        break;
+    case 'y':
+        // console.log('nice color');
+        alert('nice color');
+        score++;
+        break;
+    case 'no':
+        // console.log('i dont like it');
+        alert('i dont like it ');
+        break;
+    case 'n':
+        //             console.log('i dont like it ');
+        alert('i dont like it ');
+}
+}
 
 // let bMonth = prompt('which month i was born?');
 
@@ -183,3 +187,4 @@ questionOne()
 questionTwo()
 questionThree()
 questionFour()
+questionFive()
